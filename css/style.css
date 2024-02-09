@@ -36,6 +36,12 @@ ul {
     cursor: pointer;
 }
 
+.btn:hover,
+.btn:focus {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+}
+
 
 
 .page-title {
@@ -65,6 +71,12 @@ ul {
 .section-materials .section-title {
     color: #222f33;
 }
+
+.section-materials .btn:hover,
+.section-materials .btn:focus {
+    background-color: #606b74;
+}
+
 
 .innovations-list {
     font-size: 14px;
