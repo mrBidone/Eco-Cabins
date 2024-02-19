@@ -1,5 +1,6 @@
-h1,h2,h3,h4,h5,h6 {
-    margin: 0 0;
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -14,13 +15,36 @@ a {
     text-decoration: none;
 }
 
-ul {
+ul,ol {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
+.container {
+    max-width: 838px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;     
+}
+
 .navigation-list {
+    display: flex;
+    column-gap: 40px;
     font-weight: 500;
     font-size: 12px;
+    margin-left: auto;
+    margin-right: 43px;
+}
+
+.navigation-link {
+    display: block;
+    padding: 46px 0;
 }
 
 .navigation-link:hover,
@@ -29,10 +53,15 @@ ul {
 }
 
 .btn {
+    min-width: 90px;
+    max-height: 34px;
+    padding: 10px 22px;
     font-weight: 500;
     font-size: 12px;
     color: #606b74;
     background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -40,25 +69,48 @@ ul {
 .btn:focus {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #ffffff;
 }
 
+.hero-flexcontainer{
+    display: flex;
+    align-items: center;
+}
 
+.padding-container {
+    padding-top: 115px;
+    padding-bottom: 196px;
+}
 
 .page-title {
     font-weight: 500;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 12px;
 }
 
 .video-link {
     font-weight: 500;
     font-size: 12px;
+    margin-left: 132px;
 }
 
 .section-title {
     font-family: "Merriweather", sans-serif;
     font-weight: 900;
     font-size: 30px;
+    max-width: 440px;
+}
+
+/* Section-Materials */
+
+.materials-flexcontainer {
+    display: flex;
+}
+
+.description-container {
+    padding: 62px 0 57px 0; 
+    margin-right: 75px;
 }
 
 .section-materials {
@@ -70,6 +122,16 @@ ul {
 
 .section-materials .section-title {
     color: #222f33;
+    margin-bottom: 13px;
+}
+
+.materials-text {
+    max-width: 400px;
+    margin-bottom: 14px;
+}
+
+.section-materials .btn {
+    border: 1px solid #646d70;
 }
 
 .section-materials .btn:hover,
@@ -77,11 +139,28 @@ ul {
     background-color: #606b74;
 }
 
+/* INNOVATIONS SECTION */
+.innovations-container{
+    padding-top: 72px;
+    padding-bottom: 78px;
+}
+
+.inovations-container .section-title {
+    margin-bottom: 8px;
+}
 
 .innovations-list {
+    display: flex;
+    column-gap: 43px;
     font-size: 14px;
     line-height: 1.71429;
     color: rgba(255, 255, 255, 0.7);
+
+}
+/* Benefits-Section */
+.benefits-container{
+    display: flex;
+    padding: 85px 0;
 }
 
 .section-benefits {
@@ -89,9 +168,18 @@ ul {
 }
 
 .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 12px;
     line-height: 1.83333;
     color: #646d70;
+    margin-left: 75px;
+    column-gap: 60px;
+    row-gap: 37px;
+}
+
+.benefits-list-item {
+    max-width: 155px;
 }
 
 .subtitle {
@@ -99,16 +187,31 @@ ul {
     font-weight: 900;
     font-size: 18px;
     color: #222f33;
+    margin-bottom: 4px;
 }
 
+/* FOOTER SECTION */
+
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-weight: 500;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
 
 .footer-contact {
     font-style: inherit;
+}
+
+.footer-link {
+    padding: 40px 0;
 }
 
 .footer-link:hover,
@@ -116,6 +219,24 @@ ul {
     color: #ffffff;
 }
 
+.footer-list{
+    display: flex;
+    column-gap: 30px;
+}
+/* ------------------------------ */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 
