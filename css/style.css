@@ -36,6 +36,8 @@ ol {
 }
 
 .background-container {
+  margin: 0 auto;
+  background-color: #ffffff;
   background-image: linear-gradient(
       rgba(34, 47, 51, 0.349),
       rgba(34, 47, 51, 0.349)
@@ -43,6 +45,7 @@ ol {
     url(../img/Bitmap@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .navigation {
